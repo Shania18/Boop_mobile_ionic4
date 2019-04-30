@@ -1,29 +1,55 @@
 <ion-header>
-  <ion-toolbar>
-    <!-- <ion-title>landing</ion-title> -->
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>Muh Pets</ion-title>
+    </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-card class="welcome-card">
-    <ion-img src="/assets/shapes.svg"></ion-img>
-    <ion-card-header>
-      <ion-card-subtitle>Get Started</ion-card-subtitle>
-      <ion-card-title>Welcome to Boop</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <!-- <p>Starting point for Ionic 4 Application with Authentication.</p> -->
-    </ion-card-content>
-  </ion-card>
+    <ion-row style="justify-content: center">
+        <ion-card class="pet-card">
+            <ion-item>
+                <div class="avatar-cont">
+                    <ion-avatar class="pet-avatar" slot="start">
+                        <img src="/assets/sufi.jpg">
+                    </ion-avatar>
+                </div>
+                <div class="div-details">
+                    <ion-label class="name">Sophie</ion-label>
+                    <ion-label class="age">2yo poop princess</ion-label>
+                    <ion-label class="bio">Smelly poo poos</ion-label>
+                </div>
+                <div class="div-settings">
+                    <ion-button class="btn" color="transparent" border="none">
+                        <img src="/assets/more.png" class="img">
+                    </ion-button>
+                </div>
+            </ion-item>
+        </ion-card>
+    </ion-row>
+    <ion-row style="justify-content: center">
+        <ion-card class="pet-card">
+            <ion-item>
+                <div class="avatar-cont">
+                    <ion-avatar class="pet-avatar" slot="start">
+                        <img src="/assets/nekko.jpg">
+                    </ion-avatar>
+                </div>
+                <div class="div-details">
+                    <ion-label class="name">Kibul</ion-label>
+                    <ion-label class="age">200yo</ion-label>
+                    <ion-label class="bio">No Tail</ion-label>
+                </div>
+                <div class="div-settings">
+                    <ion-button class="btn" color="transparent" border="none">
+                        <img src="/assets/more.png" class="img">
+                    </ion-button>
+                </div>
+            </ion-item>
+        </ion-card>
+    </ion-row>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button>
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
 </ion-content>
-<ion-footer>
-  <ion-toolbar>
-      <ion-row>
-        <ion-col>
-          <ion-button color="primary" expand="full" color="primary" (click)="login()">Login</ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button color="primary" expand="full" color="danger" (click)="register()">Register</ion-button>
-        </ion-col>
-      </ion-row>
-  </ion-toolbar>
-</ion-footer>
+
